@@ -1,0 +1,11 @@
+\section{User Requirement Analysis}
+\begin For User Requirement Analysis, users of this system have been asked about possible requirements
+that this software should have and we got following resultant list of outputs-:
+ Provide on-line way to analysis so that individual does not have to install anything.
+ Make it work like batch mode. so, that user can give inputs together and relax.
+ Help M.Tech and Civil Engineer to analysis structure.
+ All the data of Staad Pro file is store in database like a tree. By the result it is very easy to
+read data.
+ Rendering 3D model on browser without any plugin installation.
+ Make PDF of different of the WaterTank.
+\end

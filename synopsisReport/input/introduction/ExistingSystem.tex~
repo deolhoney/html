@@ -1,0 +1,15 @@
+\section{The Existing System}
+In Past the people were spending their alot of a very usefull time for writing a code to make a
+WaterTank in different size. But know I made in a specification Form in which a user can put a
+values in it according to the dimension he/she needed. By this the user time will be saved he/she
+can use this usefull time in an other important thing.
+ Limitations of previous system
+\begin {enumerate} 
+\item• No batch mode
+\item• Complex workflow
+\item• Not open-source (User not modified the software)
+\item• They need installation and a lot of system resources
+\item• Platform dependent
+\item• You could only put the dimension then the drawing will automatically in the front of you.
+\end{enumerate}
+

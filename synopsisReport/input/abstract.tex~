@@ -1,0 +1,33 @@
+\begin{Large}
+\centertext{Abstract}
+\end{Large}
+
+CAD development project discuss the work done in computer-aided-design. Computer-aided
+design (CAD) is the use of computer systems to assist in the creation, modification, analysis, or
+optimization of a design.I explored OpenSCAD source code. OpenSCAD is Free and Open Source
+CAD Software. OpenSCAD is a fully comprehensive 3D CAD application that you can download
+and install for free. There is a large base of satisfied OpenSCAD users worldwide, and it is available
+in more than 20 languages and for all major operating systems, including Microsoft Windows, Mac
+OS X and Linux (De- bian, Ubuntu, Fedora, Mandriva, Suse ...). OpenSCAD is an application for
+Computer Aided Design (CAD) in three dimensions (3d).
+OpenSCAD is a software for creating solid 3D CAD objects. It is free software and available for
+Linux/UNIX, MS Windows and Apples OS X. Unlike most free software for creating 3D models
+(such as the famous application Blender) it does not focus on the artistic aspects of 3D modelling
+but instead on the CAD aspects. Thus it might be the application you are looking for when you
+are planning to create 3D models of machine parts but pretty sure is not what you are looking
+for when you are more interested in creating computer-animated movies. OpenSCAD is not an
+interactive modeller. Instead it is something like a 3D-compiler that reads in a script file that
+describes the object and renders the 3D model from this script file (see examples below). This
+gives you (the designer) full control over the modelling process and enables you to easily change
+any step in the modelling process or make designes that are defined by configurable parameters.
+Also, this project makes this Project 3D model of Water Tank.In this project, the user will be
+able to enter the specifications of the Water Tank through the web browser using Django (Python
+Web Framework) and on the back-end, the OpenSCAD will use those input values to Draw the
+Water Tank for certain parametric and in this by filling a dimmension of a water tank by the user
+on a web browser and he/she will obtain a zip file on a browser then a user can download that zip
+file from a browser and unzip that file and open that file in a OpenSCAD. when this file is open
+by the user in an OpenSCAD then hs to be/she has to be render that file with a function key (f5).
+The output that can be taken has format .scad.
+This project is completely open source and the entire code is available to the user as and when
+required. There is also Complete developer’s Documentation as well as User manual along with it
+that helps using it a lot easier.

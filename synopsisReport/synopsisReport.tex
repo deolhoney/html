@@ -1,0 +1,183 @@
+\documentclass[12pt,includeheadfoot,a4paper]{report}
+\usepackage[print,nopanel]{pdfscreen}
+%\begin{print}
+\usepackage{lipsum}% http://ctan.org/pkg/lipsum
+\usepackage{titletoc}
+%\section{type}
+\usepackage{lastpage}
+\usepackage{macro/macro}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{array}
+\newcolumntype{K}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage{xcolor, colortbl}
+\definecolor{Gray}{gray}{0.85}
+\usepackage{verbatim}
+\usepackage[Glenn]{fncychap}
+\usepackage{placeins}
+\let\Oldsubsection\subsection
+\renewcommand{\subsection}{\FloatBarrier\Oldsubsection}
+\lhead{\bfseries OpenSCAD's customizer}
+\rhead{}
+\usepackage[left=2.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm]{geometry}
+\pagestyle{fancy}
+%\end{print}
+\margins{2.5cm}{1.5cm}{1.5cm}{1.5cm}
+\linespread{1.25}
+\screensize{8cm}{9cm}
+\overlay{overlay8.pdf}
+\usepackage{graphicx}
+
+
+\begin{document}
+	\input{input/syn_titlepage.tex}
+	\begin{screen}
+		\ppttitle
+	\end{screen}
+\thispagestyle{empty} 
+\pagetitle
+\newpage
+\pagenumbering{Roman}
+\cfoot{\thepage}
+
+\input{input/abstract.tex}
+\newpage
+\input{input/acknowledgement.tex}
+
+\tableofcontents
+\listoffigures
+\pagenumbering{arabic}
+\cfoot{\thepage}
+
+\chapter{INTRODUCTION}
+\section{Overview}
+\begin{figure}[H] 
+	\centering \includegraphics[scale=0.31]{images/openscad.png}
+	\caption{OpenSCAD's logo}
+	\label{fig:openscadlogo}
+\end{figure}
+
+User Interface for Customizing Models in OpenSCAD is the project that I worked upon it in my "Minor Project". It is under the umbrella organization of BRL-CAD. OpenSCAD is a free and Open-source software application for creating solid 3D CAD objects. It is a script only based
+modeler, with a specific description language. Parts cannot be selected or modified by mouse
+in the 3D view. An OpenSCAD script specifies geometric primitives and defines how they are
+modified and manipulated to render a 3D model. OpenSCAD is available for Windows, Linux and
+OS X. It does constructive solid geometry (CSG). OpenSCAD has in a way redefined how easy
+3D modeling can be. But the Wikipedia article on OpenSCAD says that it is a non-interactive
+modeler, but rather a 3D compiler based on a textual description language. Pay attention to the
+above line, its primarily what Ill be talking about. Solid 3D modeling. That sounds like some
+serious business. But its just an awesome tool for making models pertaining to many uses (mostly
+3D printing). And 3D printing as we can all agree upon is cool. 3D models can be created by
+anyone using OpenSCAD. OpenSCAD is as much for designers as it is for you and me. What
+else can most people agree upon apart from the fact that solid 3D modeling is cool? A graphical
+interface is simpler and more intuitive to use. There is a general aversion for typing commands in
+order to get things done. Simply put, more people have an inclination towards GUI.
+
+\input{input/introduction/ExistingSystem.tex}
+
+\section{User Requirement Analysis}
+ For User Requirement Analysis, users of this system have been asked about possible requirements
+that this software should have and we got following resultant list of outputs-:
+   \begin {enumerate} \item Provide on-line way to analysis so that individual does not have to install anything.
+    \item Make it work like batch mode. so, that user can give inputs together and relax.
+   \item Help M.Tech and Civil Engineer to analysis structure.
+   \item All the data of Staad Pro file is store in database like a tree. By the result it is very easy to
+read data.
+    \item Rendering 3D model on browser without any plugin installation.
+    \item Make PDF of different of the WaterTank
+\end {enumerate}
+
+
+\chapter{FEASIBILITY STUDY}
+\section{Feasibility Study}
+Feasibility analysis aims to uncover the strengths and weaknesses of a project. In its simplest term,
+the two criteria to judge feasibility are cost required and value to be attained. As such, a well-
+designed feasibility analysis should provide a historical background of the project, description of the
+project or service, details of the operations and management and legal requirements. Generally,
+feasibility analysis precedes technical development and project implementation. There is some
+feasibility factors by which we can determine that project is feasible or not
+\begin{itemize}
+	\item {\bf{Technical feasibility}}: Technological feasibility is carried out to determine whether the
+project has the capability, in terms of software, hardware, personnel to handle and fulfill
+the user requirements. This whole project is based on making 3D waterTank model and on
+the OpenSCAD and Django for user interface. Technical feasibility of this project revolves
+around the technical boundaries and limitations of the OpenSCAD and Django. Structure
+Information Modeling is technically feasible as it is built up in Open Source Environment
+and thus it can be run on any Open Source platform.
+	
+	\item {\bf{Economic feasibility}}: Economic analysis is the most frequently used method to determine
+the cost/benefit factor for evaluating the effectiveness of a new system. In this analysis we
+determine whether the benefit is gain according to the cost invested to develop the project
+or not. If benefits outweigh costs, only then the decision is made to design and implement
+the system. It is important to identify cost and benefit factors, which can be categorized as
+follows:
+\begin{enumerate} 
+\item Development costs
+\item Operating costs
+\end{enumerate}
+Structure Information Modeling Software is also Economically feasible with 0 Development
+and Op- erating Charges as it is developed in Django framework and OpenSCAD which is
+FOSS technology and the software is operated on Open Source platform.
+
+        \item {\bf{Operational feasibility}}: Operational feasibility is a measure of how well a project solves
+the problems, and takes advantage of the opportunities identified during scope definition
+and how it satisfies the requirements identified in the requirements analysis phase of system
+development. All the Operations performed in the software are very quick and satisfies all
+the requirements. This project is also operational feasible as it automates the work of solving
+the problem of analysising the structures which not only saves time but also saves money as
+most of the work is done by Employees and M.Tech students is done by this software.
+
+\end{itemize}
+\section{Objective of Project}
+
+Structure Information Modeling Software is a web based software (that means it can run on
+any operation system) and the main objectives of this project is to:
+\begin{enumerate}
+\item  To inspire M.Tech students to automate their work and do programming
+\item Perform most of difficult Calculation work
+\item  Make it work like batch mode. so, that user can give inputs together and relax.
+\item Accept inputs from the user in *.scad file format
+\item Help M.Tech and Civil Engineer to analysis structure.
+\item Reduce the time for analysis.
+\item Generates the final output in the form of PDF.
+\item Provide on-line way to analysis so that individual does not have to install anything.
+	
+\end{enumerate}
+
+\chapter{PLANNING OF WORK}
+
+The basic implementation of this project is done using prototype model. There is need to modify the structure of the project. We have to divide the task into there parts and its describe the with following:
+
+\begin{enumerate}
+	\item \textbf{Front end}
+          In this the layman can be interact with the web browser. In this a layman can get a form on the web browser with a fully dimmension of a water tank.The layman can fill the values in the form on a web browser. Then layman can get a submit button on a browser then layman can submit that value by clicking a submit button on a browser. Then whole the values of water tank that can be filled by a layman can be record by pressing a submit button.Then their will be a zip file downloading option on a web browser layman click on that option then the file will be downloaded in the form of a zip file.
+ 
+	\item \textbf{Back End}
+	The main core of this project is in OpenScad macro this macro will actualy create the water tank according to user Specification. 
+	
+\item \textbf{Interface} In Last, The GUI of the project will be defined which will include view function to
+generate the ouput according to the user’s input. For rendering 3D model of Water Tank.
+\end{enumerate}
+
+
+ \chapter{FACILITIES REQUIRED FOR PROPOSED WORK}
+
+\section{Software Requirements}
+The following softwares may be used while developing and testing the software:
+\begin{enumerate} 
+	\item  Python (2.7)(https://www.python.org/)
+        \item  django (1.9)(https://github.com/django)
+	\item  OpenScad (https://www.thingiverse.com/jumpstart/openscad)
+        \item  OpenScad (https://cubehero.com/2013/11/19/know-only-10-things-to-be-dangerous-in-openscad/)
+          \end{enumerate}
+
+\addcontentsline{toc}{chapter}{BIBLIOGRAPHY}
+\bibliographystyle{ieeetr} 
+\begin{thebibliography}{22}
+\bibitem{} "OpenSCAD -  Openscad.org, 2016. [Online]. Available: https://cubehero.com/2013/11/19/know-only-10-things-to-be-dangerous-in-openscad/
+\bibitem{} "OpenSCAD -  Openscad.org, 2016. [Online]. Available: http://www.openscad.org/news.html\#20160714. [Accessed: 27- Nov- 2016].
+.
+
+\end{thebibliography}
+\end{document}
+
