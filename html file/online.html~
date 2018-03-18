@@ -1,0 +1,32 @@
+
+<head>
+  <h1><title>PARUPKAAR</title></h1>
+</head>
+<body H1 align="center">
+
+
+<div class="PARUPKAAR">
+  <h1>PARUPKAAR</h1>
+</div>
+
+
+
+  <form action="index.html" class="login">
+    <H1 align="bottom ">
+    <div><label for="email"><b>Email</b></label>
+    <input type="email" name="email" class="login-input" placeholder="Email Address" autofocus>
+    <div><label for="password"><b>PASSWORD</b></label>
+    <input type="password" name="password" class="login-input" placeholder="Password"></div>
+    <input type="submit" value="Login" class="login-submit">
+    <p class="create account"><a href=file:///home/honey/Desktop/html%20file/create.html>CREATE account</a></p>
+    <p class="login-help"><a href=https://help.myspace.com/hc/en-us/articles/201956084-Forgot-Password">Forgot password?</a></p>
+    
+  </form>
+
+  
+  </section>
+</body>
+</html>
+
+
+      
